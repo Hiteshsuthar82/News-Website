@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Application</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="flex container main-nav">
+      <a href="#" class="company-logo" onclick="reload()">
+        <img src="logo.png" alt="latest news">
+      </a>
+      <div class="nav-links" id="nav-links">
+        <ul class="flex" id="nav-link-ul">
+          <li id="sports" class="hover-link" onclick="onNavItemClick('sports')">Sports</li>
+          <li id="finance" class="hover-link" onclick="onNavItemClick('finance')">Finance</li>
+          <li id="politics" class="hover-link" onclick="onNavItemClick('politics')">Politics</li>
+        </ul>
+      </div>
+      <form class="search-bar flex" id="search-form">
+        <input id="news-input" type="text" autocomplete="off" placeholder="Search here..." >
+        <button type="submit" id="search-btn">Search</button>
+        <span class="material-symbols-outlined replace-search-btn" onclick="searchNewsByBtnClick()">search</span>
+        <span class="material-symbols-outlined menu-icon" id="closeSearchBar" onclick="closeSearchBar()">close</span>
+      </form>
+      <div class="icon-container flex">
+        <span class="material-symbols-outlined search-icon-btn" onclick="openSearchBox()">search</span>
+        <span class="material-symbols-outlined menu-icon" id="menu">menu</span>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="cards-container container flex" id="cards-container">
+      <!-- simple template of the cards that will insert in cardscontainer during the program execution -->
+      <!-- <div class="card">
+        <img src="news-img.avif" alt="">
+        <div class="card-content">
+          <h3 class="news-title">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, accusamus?
+          </h3>
+          <h6 class="news-source">qjiwdidj</h6>
+          <p class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt officiis maiores saepe illo quidem ratione excepturi fuga quam? Neque laborum quis illo sunt rem.</p>
+        </div>
+      </div> -->
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
