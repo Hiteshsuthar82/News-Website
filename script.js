@@ -1,4 +1,4 @@
-const api_key = "c92a7f04f00948408ffab183573038da"
+const api_key = "Enter your API-KEY here"
 
 window.addEventListener('load', () => {
   fetchNews("india");
